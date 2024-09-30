@@ -1,0 +1,125 @@
+/* CSS for the website header and sections */
+
+h1 {
+    font-family: 'header', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 5.5em;
+}
+
+h2 {
+    font-family: 'header', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+}
+
+h3 {
+    font-family: 'header', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+/* Block styles */
+.block-with-bg-img-1 {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('image/muzium-sultan-abu-bakar.jpg'); /* add the linear gradient on top of the image */
+    background-size: cover; /* scale the image to cover the entire block */
+    background-position: center; /* center the image within the block */
+    height: 600px; /* set the height of the block */
+    position: relative; /* allows the text overlay to be positioned absolutely */
+}
+
+.block-with-bg-img-2 {
+    display: flex;
+    background-color: rgb(231, 231, 231); /* add the linear gradient on top of the image */
+    background-size: cover; /* scale the image to cover the entire block */
+    background-position: center; /* center the image within the block */
+    height: 600px; /* set the height of the block */
+    position: relative; /* allows the text overlay to be positioned absolutely */
+}
+
+.block-with-bg-img-1 .border-bottom {
+    position: absolute;
+    bottom: 0; /* position the border at the bottom of the block */
+    left: 0; /* align the border with the left edge of the block */
+    width: 100%; /* make the border span the entire width of the block */
+    height: 20px; /* set the height of the border */
+    background-color: #000; /* set the color of the border */
+}
+
+.block-with-bg-img-2 .border-bottom {
+    position: absolute;
+    bottom: 0; /* position the border at the bottom of the block */
+    left: 0; /* align the border with the left edge of the block */
+    width: 100%; /* make the border span the entire width of the block */
+    height: 20px; /* set the height of the border */
+    background-color: #000; /* set the color of the border */
+}
+
+.text-overlay {
+    position: absolute; /* position the overlay on top of the background image */
+    top: 50%; /* center the overlay vertically */
+    left: 50%; /* center the overlay horizontally */
+    transform: translate(-50%, -50%); /* move the overlay up and left by 50% to center it */
+    color: #fff; /* text color */
+    text-shadow: 2px 10px 5px #333;
+    text-align: center; /* center the text within the overlay */
+    padding: 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    color: #fff; /* button text color */
+    background-color: #000; /* button background color */
+    padding: 10px 20px; /* button padding */
+    border-radius: 5px; /* button border radius */
+    text-decoration: none; /* remove underline from link */
+    margin-top: 20px; /* add margin above the button */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+/* Section styles */
+section {
+    padding: 20px 0;
+}
+
+
+section p{
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+section h2 {
+    font-family: 'header', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    text-align: left;
+    margin-top: 10px;
+    
+}
+
+section li{
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+}
+
+#home {
+    background-color: #f0f0f0;
+}
+
+.cell {
+    color: #f0f0f0;
+    width: 50%;
+    padding: 50px;
+}
+
+.btn {
+    border: 1px solid white;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+}
