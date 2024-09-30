@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'header'; /* name of the font */
+    src: url('fonts/JosefinSans-Regular.ttf') format('truetype'); /* path to the font file and format */
+}
+
+@font-face {
+    font-family: 'normal'; /* name of the font */
+    src: url('fonts/Lato-Regular.ttf') format('truetype'); /* path to the font file and format */
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px; /* add right margin */
+  }
+
+/* General styles */
+body {
+    font-family: 'normal', sans-serif;
+    margin: 0;
+    background-color: white;
+}
+  
+/* Header styles */
+header {
+    background-color: rgba(223,32,39);
+    position: fixed; /* fixed position */
+    top: 0; /* stick to the top of the screen */
+    left: 0; /* stick to the left of the screen */
+    width: 100%; /* take up the full width of the screen */
+    z-index: 1; /* ensures the header stays on top of other elements */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Adds shadow behind the header */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 60px;
+    
+}
+
+nav a {
+    font-family: 'header', sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+}
+
+.dropdown {
+    position: relative; /* allows the sub-menu to be positioned absolutely */
+}
+
+.dropdown:hover .sub-menu {
+    display: block; /* display sub-menu on hover */
+}
+
+.sub-menu {
+    display: none; /* hide sub-menu by default */
+    position: absolute; /* position the sub-menu below the parent item */
+    top: 100%; /* align the sub-menu with the bottom of the parent item */
+    left: 0; /* align the sub-menu with the left edge of the parent item */
+    background-color: rgb(0, 0, 0); /* sub-menu background color */
+    padding: 10px 0; /* add padding to the sub-menu */
+}
+
+.sub-menu li:hover{
+    background-color: #ffffff;
+}
+
+.sub-menu a {
+    padding: 10px; /* add padding to the sub-menu links */
+    word-wrap: break-word;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.sub-menu a:hover {
+    color: #000;
+}
+
+.border-bottom {
+    position: absolute;
+    bottom: 0; /* position the border at the bottom of the block */
+    left: 0; /* align the border with the left edge of the block */
+    width: 100%; /* make the border span the entire width of the block */
+    height: 20px; /* set the height of the border */
+    background-color: #000; /* set the color of the border */
+}
+
+.footer {
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+footer h3 {
+    font-family: 'header', sans-serif;
+    color: rgb(255, 255, 255);
+}
