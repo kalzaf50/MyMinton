@@ -5,9 +5,7 @@
 }
 
 .container {
-    padding-left: 300px;
-    padding-right: 300px;
-    margin: 0 auto;
+    padding: 0 300px; /* Padding of 300px left and right */
 }
 
 h1 {
@@ -140,25 +138,29 @@ section li{
     display: flex;
     overflow-x: scroll;
     gap: 20px; /* Add some space between tournament items */
-    padding: 20px;
     scroll-snap-type: x mandatory;
-  }
-  
-  .tournament {
+}
+
+.scroll-wrapper {
+    padding: 0 300px; /* Align the scroll area with the header's padding */
+    overflow-x: hidden; /* Ensure no overflow beyond the padded area */
+}
+
+.tournament {
     flex: 0 0 auto; /* Prevent flexbox from shrinking items */
     width: 300px; /* Width of each tournament card */
     scroll-snap-align: start;
     text-align: center;
-  }
-  
-  .tournament img {
+}
+
+.tournament img {
     width: 100%;
     height: auto;
     border-radius: 10px;
-  }
-  
-  .tournament p {
+}
+
+.tournament p {
     margin-top: 10px;
     font-size: 16px;
     color: #333;
-  }
+}
