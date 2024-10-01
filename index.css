@@ -137,8 +137,9 @@ section li{
 .scroll-container {
     display: flex;
     overflow-x: scroll;
-    gap: 20px; /* Add some space between tournament items */
+    gap: 20px; 
     scroll-snap-type: x mandatory;
+    height: 550px;
 }
 
 .scroll-wrapper {
@@ -150,7 +151,6 @@ section li{
     flex: 0 0 auto; /* Prevent flexbox from shrinking items */
     width: 300px; /* Width of each tournament card */
     scroll-snap-align: start;
-    text-align: center;
 }
 
 .tournament img {
@@ -160,6 +160,7 @@ section li{
 }
 
 .tournament p {
+    text-align: center;
     margin-top: 10px;
     font-size: 16px;
     color: #333;
