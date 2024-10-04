@@ -33,12 +33,12 @@ p {
 
 /* Block styles */
 .block-with-bg-img-1 {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('images/court.jpg'); /* add the linear gradient on top of the image */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('images/players.jpg'); /* add the linear gradient on top of the image */
     background-size: cover; /* scale the image to cover the entire block */
     background-position: center; /* center the image within the block */
-    min-height: 650px; /* set the height of the block */
-    height: auto;
+    height: 450px;
     position: relative; /* allows the text overlay to be positioned absolutely */
+    margin-top: 80px;
 }
 
 .block-with-bg-img-2 {

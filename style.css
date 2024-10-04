@@ -33,56 +33,38 @@ header {
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
+    display: flex;
+    list-style: none;
     padding: 0;
-    
+    margin: 0;
 }
 
-nav li {
-    display: inline-block;
-    margin-right: 60px;
-    
+nav ul li {
+    margin-right: 50px; /* Space between the links */
 }
 
-nav a {
-    font-family: 'header', sans-serif;
+nav ul li a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 1.5em;
+    color: white; 
+    font-size: 18px;
+    font-family: 'header', sans-serif; 
 }
 
-.dropdown {
-    position: relative; /* allows the sub-menu to be positioned absolutely */
+/* Pseudo-element for the border */
+nav ul li a::after {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Adjust based on the distance from the link text */
+    width: 0; /* Initial width is 0 */
+    height: 2px; /* Height of the border */
+    background-color: white; /* White border */
+    transition: width 0.3s ease-in-out; /* Smooth transition for the hover effect */
 }
 
-.dropdown:hover .sub-menu {
-    display: block; /* display sub-menu on hover */
-}
-
-.sub-menu {
-    display: none; /* hide sub-menu by default */
-    position: absolute; /* position the sub-menu below the parent item */
-    top: 100%; /* align the sub-menu with the bottom of the parent item */
-    left: 0; /* align the sub-menu with the left edge of the parent item */
-    background-color: rgb(0, 0, 0); /* sub-menu background color */
-    padding: 10px 0; /* add padding to the sub-menu */
-}
-
-.sub-menu li:hover{
-    background-color: #ffffff;
-}
-
-.sub-menu a {
-    padding: 10px; /* add padding to the sub-menu links */
-    word-wrap: break-word;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-.sub-menu a:hover {
-    color: #000;
+/* Hover effect */
+nav ul li a:hover::after {
+    width: 100%; /* Expands to match the width of the text */
 }
 
 .border-bottom {
@@ -99,8 +81,6 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    
 }
 
 footer h3 {
