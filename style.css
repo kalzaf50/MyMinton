@@ -21,7 +21,6 @@ body {
     background-color: white;
 }
   
-/* Header styles */
 header {
     background-color: rgba(223,32,39);
     position: fixed; /* fixed position */
@@ -32,39 +31,28 @@ header {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Adds shadow behind the header */
 }
 
-nav ul {
+.nav {
     display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    align-items: center;
 }
 
-nav ul li {
-    margin-right: 50px; /* Space between the links */
-}
-
-nav ul li a {
+.nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px;
     text-decoration: none;
-    color: white; 
-    font-size: 18px;
-    font-family: 'header', sans-serif; 
+    font-size: 17px;
+    border-bottom: 4px solid transparent;
 }
 
-/* Pseudo-element for the border */
-nav ul li a::after {
-    content: ''; 
-    position: absolute;
-    left: 0;
-    bottom: -5px; /* Adjust based on the distance from the link text */
-    width: 0; /* Initial width is 0 */
-    height: 2px; /* Height of the border */
-    background-color: white; /* White border */
-    transition: width 0.3s ease-in-out; /* Smooth transition for the hover effect */
+.nav a:hover {
+    border-bottom: 4px solid white;
 }
 
-/* Hover effect */
-nav ul li a:hover::after {
-    width: 100%; /* Expands to match the width of the text */
+.nav a.active {
+    border-bottom: 4px solid white;
 }
 
 .border-bottom {
